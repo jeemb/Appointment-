@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Appointment Maker</title>
+    <link rel="stylesheet" href="css/bootstrap-theme.css" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+  <div class="container">
+      <h1>Appointment Request</h1>
+      <div id="blanks">
+      <form>
+          <div class="form-group">
+            <label for="nameInput">Name:</label>
+            <input id="nameInput" class="form-control" type="text">
+          </div>
+
+          <div class="form-group">
+            <label for="dateInput">Date:</label>
+            <input id="dateInput" class="form-control" type="text">
+          </div>
+
+          <div class="form-group">
+            <label for="startInput">Start Time:</label>
+            <input id="startInput" class="form-control" type="text">
+          </div>
+          <div class="end">
+            <label for="endInput">End Time:</label>
+            <input id="endInput" class="form-control" type="text">
+          </div>
+          <button type="submit" class="btn">Submit my request!</button>
+        </form>
+      </div>
+
+      <div id="output">
+        <h2>This is confirmation of your scheduled appointment.</h2>
+        <p> Your scheduled appointment is for <span class="nameInput"></span> on <span class="dateInput"></span> starting at <span class="startInput"></span> and ending at <span class="endInput"></span>. See you then!</p>
+      </div>
+  </div>
+  </body>
+</html>
